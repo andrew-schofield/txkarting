@@ -10,11 +10,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("TXKarting")]
-[assembly: AssemblyDescription("Transmission Kart Lap Timing Software")]
+[assembly: AssemblyTitle("TXKartingModel")]
+[assembly: AssemblyDescription("Data objects used  by the TXKarting Application")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("txcamp.org")]
-[assembly: AssemblyProduct("TXKarting")]
+[assembly: AssemblyProduct("TXKartingModel")]
 [assembly: AssemblyCopyright("Copyright © txcamp.org 2013")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -25,7 +25,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("e47dc852-fc54-4752-892c-0d6dcc76a5f4")]
+[assembly: Guid("6c504074-80d3-4e1e-99ac-09cc843d7d29")]
 
 // Version information for an assembly consists of the following four values:
 //

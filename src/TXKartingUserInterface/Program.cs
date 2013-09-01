@@ -1,4 +1,10 @@
-﻿namespace Org.TXCamp.TXKarting.TXKartingUserInterface
+﻿// -----------------------------------------------------------------------
+// <copyright file="Program.cs" company="txcamp.org">
+// TODO: Update copyright text.
+// </copyright>
+// -----------------------------------------------------------------------
+
+namespace Org.TXCamp.TXKarting.TXKartingUserInterface
 {
     using System;
     using System.Windows.Forms;
