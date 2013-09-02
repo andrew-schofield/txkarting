@@ -4,7 +4,7 @@
 // </copyright>
 // -----------------------------------------------------------------------
 
-namespace Org.TXCamp.TXKarting.TXKartingUserInterface
+namespace Org.TXCamp.TXKarting.TXKartingModel
 {
     /// <summary>
     /// A 16 bit ID for identifying karts and drivers
@@ -33,6 +33,16 @@ namespace Org.TXCamp.TXKarting.TXKartingUserInterface
         public short GetID()
         {
             return this.internalID;
+        }
+
+        public override bool Equals(object obj)
+        {
+            return this.internalID.Equals(((TXID)obj).GetID());
+        }
+
+        public override int GetHashCode()
+        {
+            return this.internalID.GetHashCode();
         }
     }
 }

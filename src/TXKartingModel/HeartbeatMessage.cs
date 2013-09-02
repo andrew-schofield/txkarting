@@ -4,7 +4,7 @@
 // </copyright>
 // -----------------------------------------------------------------------
 
-namespace Org.TXCamp.TXKarting.TXKartingUserInterface
+namespace Org.TXCamp.TXKarting.TXKartingModel
 {
     /// <summary>
     /// A parsed 'heartbeat' message received by the decoder
@@ -32,7 +32,7 @@ namespace Org.TXCamp.TXKarting.TXKartingUserInterface
         /// <returns>The elapsed time in milliseconds</returns>
         public uint GetElapsedTime()
         {
-            return elapsedTimeMillis;
+            return this.elapsedTimeMillis;
         }
     }
 }

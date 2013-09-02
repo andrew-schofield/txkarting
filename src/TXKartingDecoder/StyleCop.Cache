@@ -1,0 +1,64 @@
+<stylecopresultscache>
+  <version>11</version>
+  <sourcecode name=".NETFramework,Version=v4.0.AssemblyAttributes.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>01/17/2013 11:47:07</timestamp>
+      <milliseconds>653</milliseconds>
+    </settings>
+    <timestamp>08/20/2013 21:14:10</timestamp>
+    <milliseconds>131</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="IMessageParser.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>01/17/2013 11:47:07</timestamp>
+      <milliseconds>653</milliseconds>
+    </settings>
+    <timestamp>09/02/2013 22:10:46</timestamp>
+    <milliseconds>653</milliseconds>
+    <violations>
+      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
+        <context>The method must have a documentation header.</context>
+        <line>16</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
+        <context>The method must have a documentation header.</context>
+        <line>18</line>
+        <warning>False</warning>
+      </violation>
+    </violations>
+  </sourcecode>
+  <sourcecode name="AssemblyInfo.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>01/17/2013 11:47:07</timestamp>
+      <milliseconds>653</milliseconds>
+    </settings>
+    <timestamp>09/02/2013 22:12:43</timestamp>
+    <milliseconds>466</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="ArduinoOutputV1.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>01/17/2013 11:47:07</timestamp>
+      <milliseconds>653</milliseconds>
+    </settings>
+    <timestamp>09/02/2013 22:14:07</timestamp>
+    <milliseconds>987</milliseconds>
+    <violations>
+      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
+        <context>The method must have a documentation header.</context>
+        <line>18</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
+        <context>The method must have a documentation header.</context>
+        <line>70</line>
+        <warning>False</warning>
+      </violation>
+    </violations>
+  </sourcecode>
+  <project key="2117602610">
+    <configuration>DEBUG;TRACE</configuration>
+  </project>
+</stylecopresultscache>

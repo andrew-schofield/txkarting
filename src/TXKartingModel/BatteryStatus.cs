@@ -4,7 +4,7 @@
 // </copyright>
 // -----------------------------------------------------------------------
 
-namespace Org.TXCamp.TXKarting.TXKartingUserInterface
+namespace Org.TXCamp.TXKarting.TXKartingModel
 {
     /// <summary>
     /// TODO: Update summary.

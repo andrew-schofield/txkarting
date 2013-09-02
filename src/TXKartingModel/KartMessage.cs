@@ -4,7 +4,7 @@
 // </copyright>
 // -----------------------------------------------------------------------
 
-namespace Org.TXCamp.TXKarting.TXKartingUserInterface
+namespace Org.TXCamp.TXKarting.TXKartingModel
 {
     /// <summary>
     /// A parsed 'kart arrived' message received by the decoder
@@ -59,7 +59,7 @@ namespace Org.TXCamp.TXKarting.TXKartingUserInterface
         /// <returns>Milliseconds between detections on the same loop</returns>
         public uint GetLapTime()
         {
-            return lapTimeMilliseconds;
+            return this.lapTimeMilliseconds;
         }
 
         /// <summary>
@@ -68,7 +68,7 @@ namespace Org.TXCamp.TXKarting.TXKartingUserInterface
         /// <returns>The status of the battery</returns>
         public BatteryStatus GetBatteryStatus()
         {
-            return batteryStatus;
+            return this.batteryStatus;
         }
 
         /// <summary>
@@ -77,7 +77,7 @@ namespace Org.TXCamp.TXKarting.TXKartingUserInterface
         /// <returns>The Kart ID</returns>
         public TXID GetKartID()
         {
-            return kartID;
+            return this.kartID;
         }
 
         /// <summary>
@@ -86,7 +86,7 @@ namespace Org.TXCamp.TXKarting.TXKartingUserInterface
         /// <returns>The Driver ID</returns>
         public TXID GetDriverID()
         {
-            return driverID;
+            return this.driverID;
         }
 
         /// <summary>
@@ -95,7 +95,26 @@ namespace Org.TXCamp.TXKarting.TXKartingUserInterface
         /// <returns>The Loop ID</returns>
         public TXID GetLoopID()
         {
-            return loopID;
+            return this.loopID;
+        }
+
+        /// <summary>
+        /// Equality comparison
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <returns><c>true</c> if objects are equal otherwise <c>false</c>.</returns>
+        public override bool Equals(object obj)
+        {
+            var compareTo = (KartMessage)obj;
+            return this.batteryStatus.Equals(compareTo.GetBatteryStatus()) && this.driverID.Equals(compareTo.GetDriverID())
+                   && this.kartID.Equals(compareTo.GetKartID()) && this.lapTimeMilliseconds.Equals(compareTo.GetLapTime())
+                   && this.loopID.Equals(compareTo.GetLoopID());
+        }
+
+        public override int GetHashCode()
+        {
+            return this.batteryStatus.GetHashCode() ^ this.driverID.GetHashCode() ^ this.kartID.GetHashCode()
+                   ^ this.lapTimeMilliseconds.GetHashCode() ^ this.loopID.GetHashCode();
         }
     }
 }
