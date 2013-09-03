@@ -9,13 +9,22 @@
     <milliseconds>131</milliseconds>
     <violations />
   </sourcecode>
+  <sourcecode name="AssemblyInfo.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>01/17/2013 11:47:07</timestamp>
+      <milliseconds>653</milliseconds>
+    </settings>
+    <timestamp>09/02/2013 22:12:43</timestamp>
+    <milliseconds>466</milliseconds>
+    <violations />
+  </sourcecode>
   <sourcecode name="IMessageParser.cs" parser="StyleCop.CSharp.CsParser">
     <settings>
       <timestamp>01/17/2013 11:47:07</timestamp>
       <milliseconds>653</milliseconds>
     </settings>
-    <timestamp>09/02/2013 22:10:46</timestamp>
-    <milliseconds>653</milliseconds>
+    <timestamp>09/03/2013 21:50:43</timestamp>
+    <milliseconds>378</milliseconds>
     <violations>
       <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
         <context>The method must have a documentation header.</context>
@@ -27,24 +36,25 @@
         <line>18</line>
         <warning>False</warning>
       </violation>
+      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
+        <context>The method must have a documentation header.</context>
+        <line>20</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
+        <context>The method must have a documentation header.</context>
+        <line>22</line>
+        <warning>False</warning>
+      </violation>
     </violations>
-  </sourcecode>
-  <sourcecode name="AssemblyInfo.cs" parser="StyleCop.CSharp.CsParser">
-    <settings>
-      <timestamp>01/17/2013 11:47:07</timestamp>
-      <milliseconds>653</milliseconds>
-    </settings>
-    <timestamp>09/02/2013 22:12:43</timestamp>
-    <milliseconds>466</milliseconds>
-    <violations />
   </sourcecode>
   <sourcecode name="ArduinoOutputV1.cs" parser="StyleCop.CSharp.CsParser">
     <settings>
       <timestamp>01/17/2013 11:47:07</timestamp>
       <milliseconds>653</milliseconds>
     </settings>
-    <timestamp>09/02/2013 22:14:07</timestamp>
-    <milliseconds>987</milliseconds>
+    <timestamp>09/03/2013 22:10:28</timestamp>
+    <milliseconds>829</milliseconds>
     <violations>
       <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
         <context>The method must have a documentation header.</context>
@@ -56,9 +66,74 @@
         <line>70</line>
         <warning>False</warning>
       </violation>
+      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
+        <context>The method must have a documentation header.</context>
+        <line>75</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
+        <context>The method must have a documentation header.</context>
+        <line>80</line>
+        <warning>False</warning>
+      </violation>
     </violations>
   </sourcecode>
   <project key="2117602610">
     <configuration>DEBUG;TRACE</configuration>
   </project>
+  <sourcecode name="DecoderComms.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>01/17/2013 11:47:07</timestamp>
+      <milliseconds>653</milliseconds>
+    </settings>
+    <timestamp>09/03/2013 22:28:50</timestamp>
+    <milliseconds>17</milliseconds>
+    <violations>
+      <violation namespace="StyleCop.CSharp.NamingRules" rule="FieldNamesMustNotUseHungarianNotation" ruleCheckId="SA1305">
+        <context>The variable name 'ftStatus' begins with a prefix that looks like Hungarian notation. Remove the prefix or add it to the list of allowed prefixes.</context>
+        <line>34</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
+        <context>The property must have a documentation header.</context>
+        <line>36</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.OrderingRules" rule="ElementsMustAppearInTheCorrectOrder" ruleCheckId="SA1201">
+        <context>All properties must be placed after all constructors.</context>
+        <line>44</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
+        <context>The method must have a documentation header.</context>
+        <line>71</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
+        <context>The method must have a documentation header.</context>
+        <line>97</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
+        <context>The method must have a documentation header.</context>
+        <line>107</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
+        <context>The method must have a documentation header.</context>
+        <line>155</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
+        <context>The method must have a documentation header.</context>
+        <line>170</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
+        <context>The method must have a documentation header.</context>
+        <line>207</line>
+        <warning>False</warning>
+      </violation>
+    </violations>
+  </sourcecode>
 </stylecopresultscache>

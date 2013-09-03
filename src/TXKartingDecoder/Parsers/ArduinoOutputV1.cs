@@ -71,5 +71,15 @@ namespace Org.TXCamp.TXKarting.TXKartingDecoder.Parsers
         {
             throw new System.NotImplementedException();
         }
+
+        public uint GetKartMessageLength()
+        {
+            return 16;
+        }
+
+        public uint GetHeartBeatMessageLength()
+        {
+            return 10;
+        }
     }
 }

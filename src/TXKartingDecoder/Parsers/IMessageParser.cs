@@ -16,5 +16,9 @@ namespace Org.TXCamp.TXKarting.TXKartingDecoder.Parsers
         KartMessage ParseKartMessage(object message);
 
         HeartbeatMessage ParseHeartbeatMessage(object message);
+
+        uint GetKartMessageLength();
+
+        uint GetHeartBeatMessageLength();
     }
 }
