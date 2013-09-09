@@ -9,7 +9,7 @@ namespace Org.TXCamp.TXKarting.TXKartingModel
     /// <summary>
     /// A parsed 'kart arrived' message received by the decoder
     /// </summary>
-    public class KartMessage
+    public class KartMessage : IDecodedMessage
     {
         /// <summary>
         /// The time in milliseconds for the previous lap.

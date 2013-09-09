@@ -78,9 +78,6 @@
       </violation>
     </violations>
   </sourcecode>
-  <project key="2117602610">
-    <configuration>DEBUG;TRACE</configuration>
-  </project>
   <sourcecode name="DecoderComms.cs" parser="StyleCop.CSharp.CsParser">
     <settings>
       <timestamp>01/17/2013 11:47:07</timestamp>
@@ -141,4 +138,7 @@
       </violation>
     </violations>
   </sourcecode>
+  <project key="2117602610">
+    <configuration>DEBUG;TRACE</configuration>
+  </project>
 </stylecopresultscache>

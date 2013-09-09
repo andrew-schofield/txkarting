@@ -9,7 +9,7 @@ namespace Org.TXCamp.TXKarting.TXKartingModel
     /// <summary>
     /// A parsed 'heartbeat' message received by the decoder
     /// </summary>
-    public class HeartbeatMessage
+    public class HeartbeatMessage : IDecodedMessage
     {
         /// <summary>
         /// The elapsed race-time in milliseconds. This will be the time since the decoder was started.

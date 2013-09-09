@@ -27,15 +27,6 @@
     <milliseconds>900</milliseconds>
     <violations />
   </sourcecode>
-  <sourcecode name="HeartbeatMessage.cs" parser="StyleCop.CSharp.CsParser">
-    <settings>
-      <timestamp>01/17/2013 11:47:07</timestamp>
-      <milliseconds>653</milliseconds>
-    </settings>
-    <timestamp>09/02/2013 20:37:47</timestamp>
-    <milliseconds>862</milliseconds>
-    <violations />
-  </sourcecode>
   <sourcecode name="TXID.cs" parser="StyleCop.CSharp.CsParser">
     <settings>
       <timestamp>01/17/2013 11:47:07</timestamp>
@@ -56,13 +47,22 @@
       </violation>
     </violations>
   </sourcecode>
+  <sourcecode name="HeartbeatMessage.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>01/17/2013 11:47:07</timestamp>
+      <milliseconds>653</milliseconds>
+    </settings>
+    <timestamp>09/09/2013 20:33:21</timestamp>
+    <milliseconds>412</milliseconds>
+    <violations />
+  </sourcecode>
   <sourcecode name="KartMessage.cs" parser="StyleCop.CSharp.CsParser">
     <settings>
       <timestamp>01/17/2013 11:47:07</timestamp>
       <milliseconds>653</milliseconds>
     </settings>
-    <timestamp>09/02/2013 22:15:03</timestamp>
-    <milliseconds>909</milliseconds>
+    <timestamp>09/09/2013 20:33:21</timestamp>
+    <milliseconds>405</milliseconds>
     <violations>
       <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementParameterDocumentationMustHaveText" ruleCheckId="SA1614">
         <context>The documentation text within the param tag for the '&lt;param name="obj" /&gt;' parameter must not be empty.</context>
@@ -76,7 +76,25 @@
       </violation>
     </violations>
   </sourcecode>
+  <sourcecode name="DecodedMessageQueue.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>01/17/2013 11:47:07</timestamp>
+      <milliseconds>653</milliseconds>
+    </settings>
+    <timestamp>09/09/2013 20:44:20</timestamp>
+    <milliseconds>984</milliseconds>
+    <violations />
+  </sourcecode>
   <project key="-298251454">
     <configuration>DEBUG;TRACE</configuration>
   </project>
+  <sourcecode name="IDecodedMessage.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>01/17/2013 11:47:07</timestamp>
+      <milliseconds>653</milliseconds>
+    </settings>
+    <timestamp>09/09/2013 20:45:10</timestamp>
+    <milliseconds>7</milliseconds>
+    <violations />
+  </sourcecode>
 </stylecopresultscache>
