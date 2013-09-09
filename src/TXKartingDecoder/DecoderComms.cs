@@ -29,6 +29,11 @@ namespace Org.TXCamp.TXKarting.TXKartingDecoder
         private readonly FTDI myFtdiDevice;
 
         /// <summary>
+        /// The size of the data packets to read from the ftdi device
+        /// </summary>
+        private readonly uint readSize;
+
+        /// <summary>
         /// The return status from the current ftdi device
         /// </summary>
         private FTDI.FT_STATUS ftStatus = FTDI.FT_STATUS.FT_OK;
@@ -41,8 +46,10 @@ namespace Org.TXCamp.TXKarting.TXKartingDecoder
         /// <summary>
         /// Initializes a new instance of the DecoderComms class.
         /// </summary>
-        public DecoderComms()
+        public DecoderComms(uint readSize)
         {
+            this.readSize = readSize;
+
             // Create new instance of the FTDI device class
             this.myFtdiDevice = new FTDI();
 
@@ -120,7 +127,6 @@ namespace Org.TXCamp.TXKarting.TXKartingDecoder
             this.ftStatus = this.myFtdiDevice.SetBaudRate(baudRate);
             if (this.ftStatus != FTDI.FT_STATUS.FT_OK)
             {
-                // Wait for a key press
                 Console.WriteLine("Failed to set Baud rate (error " + this.ftStatus + ")");
                 return;
             }
@@ -129,7 +135,6 @@ namespace Org.TXCamp.TXKarting.TXKartingDecoder
             this.ftStatus = this.myFtdiDevice.SetDataCharacteristics(dataBits, stopBits, parity);
             if (this.ftStatus != FTDI.FT_STATUS.FT_OK)
             {
-                // Wait for a key press
                 Console.WriteLine("Failed to set data characteristics (error " + this.ftStatus + ")");
                 return;
             }
@@ -138,7 +143,6 @@ namespace Org.TXCamp.TXKarting.TXKartingDecoder
             this.ftStatus = this.myFtdiDevice.SetFlowControl(flowControl, xon, xoff);
             if (this.ftStatus != FTDI.FT_STATUS.FT_OK)
             {
-                // Wait for a key press
                 Console.WriteLine("Failed to set flow control (error " + this.ftStatus + ")");
                 return;
             }
@@ -147,14 +151,12 @@ namespace Org.TXCamp.TXKarting.TXKartingDecoder
             this.ftStatus = this.myFtdiDevice.SetTimeouts(readTimeout, writeTimeout);
             if (this.ftStatus != FTDI.FT_STATUS.FT_OK)
             {
-                // Wait for a key press
                 Console.WriteLine("Failed to set timeouts (error " + this.ftStatus + ")");
             }
         }
 
         public void WriteData(string data)
         {
-            // Perform loop back - make sure loop back connector is fitted to the device
             // Write string data to the device
             uint numBytesWritten = 0;
 
@@ -162,7 +164,6 @@ namespace Org.TXCamp.TXKarting.TXKartingDecoder
             this.ftStatus = this.myFtdiDevice.Write(data, data.Length, ref numBytesWritten);
             if (this.ftStatus != FTDI.FT_STATUS.FT_OK)
             {
-                // Wait for a key press
                 Console.WriteLine("Failed to write to device (error " + this.ftStatus + ")");
             }
         }
@@ -178,14 +179,13 @@ namespace Org.TXCamp.TXKarting.TXKartingDecoder
                 this.ftStatus = this.myFtdiDevice.GetRxBytesAvailable(ref numBytesAvailable);
                 if (this.ftStatus != FTDI.FT_STATUS.FT_OK)
                 {
-                    // Wait for a key press
                     Console.WriteLine("Failed to get number of bytes available to read (error " + this.ftStatus + ")");
                     return string.Empty;
                 }
 
                 Thread.Sleep(1);
             }
-            while (numBytesAvailable < 18); // 16bytes of data plus linefeed
+            while (numBytesAvailable < this.readSize); // 16bytes of data plus linefeed
 
             // Now that we have the amount of data we want available, read it
             string readData;
@@ -195,7 +195,6 @@ namespace Org.TXCamp.TXKarting.TXKartingDecoder
             this.ftStatus = this.myFtdiDevice.Read(out readData, numBytesAvailable, ref numBytesRead);
             if (this.ftStatus != FTDI.FT_STATUS.FT_OK)
             {
-                // Wait for a key press
                 Console.WriteLine("Failed to read data (error " + this.ftStatus + ")");
                 return string.Empty;
             }
