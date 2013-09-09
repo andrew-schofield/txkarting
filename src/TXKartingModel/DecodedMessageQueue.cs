@@ -41,7 +41,7 @@ namespace Org.TXCamp.TXKarting.TXKartingModel
         /// <returns>The first message in the queue</returns>
         public IDecodedMessage Check()
         {
-            return this.internalQueue.Peek();
+            return this.internalQueue.Count == 0 ? null : this.internalQueue.Peek();
         }
 
         /// <summary>

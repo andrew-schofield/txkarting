@@ -19,7 +19,7 @@ namespace Org.TXCamp.TXKarting.TXKartingDecoder.Parsers
         {
             // turn the message object into a string and split it based on the delimiter ':'
             var messageString = Convert.ToString(message);
-            var messageParts = messageString.Split(':');
+            var messageParts = messageString.Split(':', '\r');
 
             if (messageParts[0].Length != 2)
             {
@@ -72,14 +72,14 @@ namespace Org.TXCamp.TXKarting.TXKartingDecoder.Parsers
             throw new System.NotImplementedException();
         }
 
-        public uint GetKartMessageLength()
+        static public uint GetKartMessageLength()
         {
-            return 16;
+            return 18;
         }
 
-        public uint GetHeartBeatMessageLength()
+        static public uint GetHeartBeatMessageLength()
         {
-            return 10;
+            return 18;
         }
     }
 }

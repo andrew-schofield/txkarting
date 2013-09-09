@@ -76,18 +76,6 @@
       </violation>
     </violations>
   </sourcecode>
-  <sourcecode name="DecodedMessageQueue.cs" parser="StyleCop.CSharp.CsParser">
-    <settings>
-      <timestamp>01/17/2013 11:47:07</timestamp>
-      <milliseconds>653</milliseconds>
-    </settings>
-    <timestamp>09/09/2013 20:44:20</timestamp>
-    <milliseconds>984</milliseconds>
-    <violations />
-  </sourcecode>
-  <project key="-298251454">
-    <configuration>DEBUG;TRACE</configuration>
-  </project>
   <sourcecode name="IDecodedMessage.cs" parser="StyleCop.CSharp.CsParser">
     <settings>
       <timestamp>01/17/2013 11:47:07</timestamp>
@@ -95,6 +83,18 @@
     </settings>
     <timestamp>09/09/2013 20:45:10</timestamp>
     <milliseconds>7</milliseconds>
+    <violations />
+  </sourcecode>
+  <project key="-298251454">
+    <configuration>DEBUG;TRACE</configuration>
+  </project>
+  <sourcecode name="DecodedMessageQueue.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>01/17/2013 11:47:07</timestamp>
+      <milliseconds>653</milliseconds>
+    </settings>
+    <timestamp>09/09/2013 22:09:18</timestamp>
+    <milliseconds>678</milliseconds>
     <violations />
   </sourcecode>
 </stylecopresultscache>

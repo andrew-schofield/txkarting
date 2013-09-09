@@ -34,6 +34,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="FTD2XX_NET">
+      <HintPath>..\..\bin\FTD2XX_NET.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -76,6 +79,16 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TXKartingDecoder\TXKartingDecoder.csproj">
+      <Project>{BB1B8FAD-F19E-4BDA-94DF-F40FD03AF39B}</Project>
+      <Name>TXKartingDecoder</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TXKartingModel\TXKartingModel.csproj">
+      <Project>{99559726-CE96-44A5-B467-1997D648AB45}</Project>
+      <Name>TXKartingModel</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\..\tools\StyleCop 4.5\stylecop.targets" />
